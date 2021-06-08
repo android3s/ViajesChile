@@ -15,7 +15,7 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS 5.0.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -24,15 +24,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <!-- Personalizaciones CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- Navegador / SmoothScrol -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark text-white text-center m-auto w-100">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img
-                <h3 class="ricomida-style hover">Viajes Chile</h3>
+                <img src="assets/img/viajes.svg" alt="Logo" height="30" class="d-inline-block align-text-top"/>
+                Viajes Chile
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,13 +44,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#recetas">Recetas</a>
+                        <a class="nav-link" href="#quienes_somos">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -58,10 +58,30 @@
     </nav>
     <!-- Encabezado / Carousel -->
     <header>
-        <div class="carousel"></div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
     <!-- Quienes Somos / Grid / Desaparece en tamaños pequeños-->
-    <section>
+    <section style="display: none">
         <h1></h1>
         <div class="row">
             <div class="col-3">
@@ -103,7 +123,7 @@
         </div>
     </section>
     <!-- Destacados / Cards -->
-    <section>
+    <section style="display: none">
         <h1></h1>
         <div class="row">
             <div class="col-3">
@@ -146,16 +166,21 @@
     </section>
     <!-- Contactanos / Typeform -->
     <section>
-        <embed>
+        <div class="typeform-widget" data-url="https://form.typeform.com/to/PywOXKdu?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
     </section>
     <!-- Footer / Titulo+RRSS -->
-    <footer>
-        <div class="row">
-            <div class="col-6">
-                <p>Viajes Chile</p>
-            </div>
-            <div class="col-6">
-                <i></i>
+    <footer class="bg-success text-white m-auto w-100 fs-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    Viajes Chile
+                </div>
+                <div class="col-6 text-center">
+                    <i class="fab fa-github-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                </div>
             </div>
         </div>
     </footer>
@@ -168,5 +193,23 @@
 
     <!-- Personalizaciones JS -->
     <script src="./assets/js/script.js"></script>
+
+    <script type="application/javascript">
+        (function() {
+            var qs,js,q,s,d=document,
+                gi=d.getElementById,
+                ce=d.createElement,
+                gt=d.getElementsByTagName,
+                id="typef_orm",
+                b="https://embed.typeform.com/";
+            if(!gi.call(d,id)) {
+                js=ce.call(d,"script");
+                js.id=id;
+                js.src=b+"embed.js";
+                q=gt.call(d,"script")[0];
+                q.parentNode.insertBefore(js,q)
+            }
+        })()
+    </script>
 </body>
 </html>
