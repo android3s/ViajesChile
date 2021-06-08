@@ -25,10 +25,16 @@
 
     <!-- Personalizaciones CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        }
+    </style>
 </head>
 <body class="text-white">
     <!-- Navegador / SmoothScrol -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center m-auto w-100 fw-bold">
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top text-center m-auto w-100 fw-bolder fs-5">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/viajes.svg" alt="Logo" height="30" class="d-inline-block align-text-top"/>
@@ -81,7 +87,7 @@
         </div>
     </header>
     <!-- Quienes Somos / Grid / Desaparece en tamaños pequeños-->
-    <section id="quienes_somos" class="py-3 px-5">
+    <section id="quienes_somos" class="py-3 px-5 d-none d-md-block d-lg-block d-xl-block">
         <h1 class="fw-bold text-center">¿Quiénes Somos?</h1>
         <hr class="text-info pt-1">
         <div class="container-fluid">
@@ -189,12 +195,12 @@
 
     <script type="application/javascript">
         (function() {
-            var qs,js,q,s,d=document,
-                gi=d.getElementById,
-                ce=d.createElement,
-                gt=d.getElementsByTagName,
-                id="typef_orm",
-                b="https://embed.typeform.com/";
+            let qs, js, q, s, d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = "typef_orm",
+                b = "https://embed.typeform.com/";
             if(!gi.call(d,id)) {
                 js=ce.call(d,"script");
                 js.id=id;
