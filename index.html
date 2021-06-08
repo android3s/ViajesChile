@@ -26,9 +26,9 @@
     <!-- Personalizaciones CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="text-white">
     <!-- Navegador / SmoothScrol -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-white text-center m-auto w-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center m-auto w-100 fw-bold">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/viajes.svg" alt="Logo" height="30" class="d-inline-block align-text-top"/>
@@ -81,7 +81,7 @@
         </div>
     </header>
     <!-- Quienes Somos / Grid / Desaparece en tamaños pequeños-->
-    <section style="display: none">
+    <section id="quienes_somos" style="display: none">
         <h1></h1>
         <div class="row">
             <div class="col-3">
@@ -123,50 +123,58 @@
         </div>
     </section>
     <!-- Destacados / Cards -->
-    <section style="display: none">
-        <h1></h1>
-        <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <p>
-
-                        </p>
+    <section id="destacados" class="py-3 px-5">
+        <h1 class="fw-bold text-center">Destacados</h1>
+        <hr class="text-info pt-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="p-4 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card bg-info border-light h-100">
+                        <img class="card-img-top" src="assets/img/card1.jpg" alt="destacados1">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bolder">Parque Nacional Torres del Paine</h4>
+                            <p class="card-text fw-bold">El Parque Nacional Torres del Paine está ubicado en la Región de Magallanes y Antártica Chilena, comuna de Torres del Payne, provincia de Última Esperanza.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <p>
-
-                        </p>
+                <div class="p-4 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card bg-info border-light h-100">
+                        <img class="card-img-top" src="assets/img/card2.jpg" alt="destacados1">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bolder">Lagunas Altiplanicas</h4>
+                            <p class="card-text fw-bold">Miscanti y Miñiques se encuentran en el altiplano
+                                andino en medio de volcanes y montañas. Las lagunas forman parte de la
+                                Reserva Nacional Los Flamencos y sus paisajes mezclan el color del agua,
+                                los volcanes y el hielo producto de las bajas temperaturas.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <p>
-
-                        </p>
+                <div class="p-4 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card bg-info border-light h-100">
+                        <img class="card-img-top" src="assets/img/card3.jpg" alt="destacados1">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bolder">Reserva Nacional Los Flamencos</h4>
+                            <p class="card-text fw-bold">En la enormidad del desierto encontrarás lagunas, salares y montañas que se entrelazan con el paisaje. ¡Juntos crean vistas mágicas!</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <p>
-
-                        </p>
+                <div class="p-4 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card bg-info border-light h-100">
+                        <img class="card-img-top" src="assets/img/card4.jpg" alt="destacados1">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bolder">Ecorregión bosque valdiviano</h4>
+                            <p class="card-text fw-bold">El bosque valdiviano, también llamado selva valdiviana, o bosque andino patagónico es una ecorregión del centro-sur de Chile.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Contactanos / Typeform -->
-    <section>
-        <div class="typeform-widget" data-url="https://form.typeform.com/to/PywOXKdu?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
+    <section id="contacto" class="py-3 px-5">
+        <h1 class="fw-bold text-center">Contacto</h1>
+        <hr class="text-info pt-1">
+        <div class="typeform-widget p-5" data-url="https://form.typeform.com/to/PywOXKdu?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
     </section>
     <!-- Footer / Titulo+RRSS -->
     <footer class="bg-success text-white m-auto w-100 fs-3">
