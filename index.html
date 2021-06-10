@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- cambio -->
 <html lang="es">
 <head>
     <meta charset="utf-8">
@@ -23,12 +22,6 @@
 
     <!-- Personalizaciones CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .card:hover{
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-        }
-    </style>
 </head>
 <body class="text-white">
     <!-- Navegador / SmoothScrol -->
@@ -193,33 +186,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
     <!-- Personalizaciones JS -->
-    <script src="./assets/js/script.js"></script>
-
-/* Script Javascript */
-
-    <script type="application/javascript">
-        $("#footer_text").mouseover(function () {
-            $("#footer_icon").removeAttr("style")
-            $("#footer_icon").animate({"padding-left": "+=" + $("#footer_icon").parent().width() + "px"}, 2000);
-
-            $("#footer_icon").removeAttr("style")
-            $("#footer_icon").attr("display","none")
-
-        })
-        //Typeform - Formulario
-        let qs, js, q, s, d = document,
-            gi = d.getElementById,
-            ce = d.createElement,
-            gt = d.getElementsByTagName,
-            id = "typef_orm",
-            b = "https://embed.typeform.com/";
-        if (!gi.call(d, id)) {
-            js = ce.call(d, "script");
-            js.id = id;
-            js.src = b + "embed.js";
-            q = gt.call(d, "script")[0];
-            q.parentNode.insertBefore(js, q)
-        }
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
